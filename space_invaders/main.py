@@ -1,8 +1,7 @@
+from .controls import events
 import pygame
 
-import sys
-
-from gun import Gun
+from .gun import Gun
 
 
 def run():
@@ -13,12 +12,8 @@ def run():
     gun = Gun(screen)
 
     while True:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                sys.exit()
+        events(gun)
+        gun.update_rotation()
         screen.fill(bg_color)
         gun.output()
         pygame.display.flip()
-
-
-run()
