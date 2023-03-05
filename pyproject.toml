@@ -3,8 +3,7 @@ name = "s-i"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
-readme = "README.md"
-packages = [{include = "s_i"}]
+packages = [{include = "space_invaders"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
