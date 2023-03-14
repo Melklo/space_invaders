@@ -1,14 +1,13 @@
 [tool.poetry]
-name = "space-invaders"
+name = "s-i"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
-readme = "README.md"
 packages = [{include = "space_invaders"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-pygame = "^2.1.2"
+python = "^3.11"
+pygame = "^2.2.0"
 
 
 [build-system]
